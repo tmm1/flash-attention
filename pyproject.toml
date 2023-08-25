@@ -1,3 +1,11 @@
 [tool.black]
 line-length = 100
 target-version = ['py38']
+
+[build-system]
+requires = [
+    "packaging",
+    "wheel",
+    "setuptools>=40.8.0"
+]
+build-backend = "setuptools.build_meta:__legacy__"
